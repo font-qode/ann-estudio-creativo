@@ -5,8 +5,7 @@ function Header() {
     return (
         <nav className='navbar'>
             <div className='navbar-logo-container'>
-                <span>Ann</span> 
-                <span>Estudio Creativo</span>
+                <img src="/logo.png" className='nav-img-logo' alt="Logo Ann Estudio Creativo" />
             </div>
             <ul className='navbar-sections-container'>
                 <li className="navbar-sections">Inicio</li>

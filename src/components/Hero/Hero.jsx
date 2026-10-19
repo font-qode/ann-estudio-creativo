@@ -1,11 +1,15 @@
+import Header from '../Header/Header';
 import './Hero.css';
 
 function Hero() {
 
     return (
         <section className='hero-section'>
+            < Header />
             <div className="hero-info-container">
-                <div className='hero-logo-container'></div>
+                <div className='hero-logo-container'>
+                    <img src="/logo.png" className='hero-logo' alt="" />
+                </div>
                 <div className='hero-title-container'>
                     <h2 className='hero-title'>
                         Marcas con intención. 
@@ -21,10 +25,10 @@ function Hero() {
                 </div>
                 <div className='hero-buttons-container'>
                     <a className='hero-button'>
-                        Contanos tu proyecto
+                        Contanos tu proyecto <span className='span-flecha-hero'> ➝ </span>
                     </a>
                     <a className='hero-button'>
-                        Ver trabajos
+                        Ver trabajos <span className='span-flecha-hero'> ➝ </span>
                     </a>
                 </div>
             </div>

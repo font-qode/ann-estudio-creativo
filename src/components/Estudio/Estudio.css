@@ -1,0 +1,41 @@
+.studio-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 125px;
+    background-color: white;
+    color: blue;
+    height: 100vh;
+    gap: 75px;
+}
+
+.studio-title-first-part {
+    font-size: 75px;
+    margin-bottom: -30px;
+    display: flex;
+}
+
+.studio-title-second-part {
+    font-size: 120px;
+    margin-top: -30px;
+    display: flex;
+}
+
+.studio-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.studio-subtitle {
+    font-size: 25px;
+}
+
+.studio-first-paragraph{
+    font-size: 25px;
+}
+
+.studio-line-container {
+    display: flex;
+    flex-direction: column;
+}
