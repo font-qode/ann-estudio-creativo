@@ -1,0 +1,123 @@
+.systems-sectios {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    background-color: white;
+    color: blue;
+    min-height: 100vh;
+    gap: 75px;
+    color: rgb(0, 0, 0);
+}
+
+.systems-title {
+    font-size: 120px;
+    margin-bottom: -30px;
+    display: flex;
+    color: blue;
+}
+
+.systems-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.systems-paragraph-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.systems-paragraph-subcontainer {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    color: blue;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.systems-paragraph {
+    font-size: 20px;
+    color: #777;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.systems-paragraph- {
+    font-size: 32px;
+}
+
+.systems-mail-container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-top: 1px solid blue;
+}
+
+.systems-mock-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-right: 10%;
+    color: #777;
+}
+
+.systems-mail-title {
+    letter-spacing: 8px;
+    font-size: 40px;
+    color: blue;
+}
+
+.systems-mail-input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.systems-mail-subtitle {
+    color: #777;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.systems-input {
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    width: 50%;
+    padding: 10px 0;
+    background: transparent;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+        color: #777;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+
+    &:focus {
+        border-bottom: 2px solid blue;
+    }
+}
+
+.systems-mail-button {
+    border: none;
+    background-color: white;
+    color: blue;
+}

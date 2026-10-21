@@ -17,15 +17,19 @@ function Trabajos() {
                 </div>
             </div>
 
-            <div className='trabajos-info-container'>
+            <div className='trabajos-info-carrousel-container'>
                 <div className='trabajos-carrousel-container'>
-                    <p className='trabajos-carrousel'> [ IMAGEN ] [ IMAGEN ] [ IMAGEN ] [ IMAGEN ] [ IMAGEN ]</p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
                 </div>
                 <div className='trabajos-info-container'>
                     <div className='trabajos-info-subcontainer'>
                         <h3 className='trabajo-title'> Marca uno </h3>
                         <p className='trabajo-description'> Social Media · Producción </p>
-                        <button className='trabajo-button'> Ver proyecto </button>
+                        <button className='trabajo-button'> Ver proyecto → </button>
                     </div>
                     <div className='trabajos-number-container'>
                         <p className='trabajos-number'> 01 </p> 
@@ -33,31 +37,39 @@ function Trabajos() {
                 </div>
             </div>
 
-            <div className='trabajos-info-container'>
+            <div className='trabajos-info-carrousel-container'>
                 <div className='trabajos-carrousel-container'>
-                    <p className='trabajos-carrousel'> [ IMAGEN ] [ IMAGEN ] [ IMAGEN ] [ IMAGEN ] [ IMAGEN ]</p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
                 </div>
                 <div className='trabajos-info-container'>
+                    <div className='trabajos-number-container'>
+                        <p className='trabajos-number'> 02 </p> 
+                    </div>
                     <div className='trabajos-info-subcontainer'>
                         <h3 className='trabajo-title'> Marca uno </h3>
                         <p className='trabajo-description'> Social Media · Producción </p>
-                        <button className='trabajo-button'> Ver proyecto </button>
-                    </div>
-                    <div className='trabajos-number-container'>
-                        <p className='trabajos-number'> 02 </p> 
+                        <button className='trabajo-button'> Ver proyecto → </button>
                     </div>
                 </div>
             </div>
 
-            <div className='trabajos-info-container'>
+            <div className='trabajos-info-carrousel-container'>
                 <div className='trabajos-carrousel-container'>
-                    <p className='trabajos-carrousel'> [ IMAGEN ] [ IMAGEN ] [ IMAGEN ] [ IMAGEN ] [ IMAGEN ]</p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
+                    <p className='trabajos-carrousel'> [ IMAGEN ] </p>
                 </div>
                 <div className='trabajos-info-container'>
                     <div className='trabajos-info-subcontainer'>
                         <h3 className='trabajo-title'> Marca uno </h3>
                         <p className='trabajo-description'> Social Media · Producción </p>
-                        <button className='trabajo-button'> Ver proyecto </button>
+                        <button className='trabajo-button'> Ver proyecto → </button>
                     </div>
                     <div className='trabajos-number-container'>
                         <p className='trabajos-number'> 03 </p> 

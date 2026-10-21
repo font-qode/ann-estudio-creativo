@@ -1,0 +1,62 @@
+.servicio-section {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    background-color: rgba(227, 227, 227, 0.472);
+    color: black;
+    min-height: 100vh;
+    gap: 75px;
+}
+
+.servicios-title {
+    font-size: 120px;
+    margin-top: -30px;
+    display: flex;
+    color: blue;
+}
+
+.servicios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.servicio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.servicio-number {
+    font-size: 200px;
+    color: blue;
+}
+
+.servicio-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 1px solid blue;
+    text-align: end;
+    max-width: 50%;
+}
+
+.servicio-left-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    border-bottom: 1px solid blue;
+    max-width: 50%;
+}
+
+.servicio-title {
+    font-size: 36px;
+}
+
+.enlace-servicios {
+    text-decoration: none;
+    color: blue;
+}
