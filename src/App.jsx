@@ -1,6 +1,7 @@
 import './App.css'
 import AnnSystems from './components/AnnSystems/AnnSystems'
 import Estudio from './components/Estudio/Estudio'
+import Footer from './components/Footer/Footer'
 import Hablemos from './components/Hablemos/Hablemos'
 import Hero from './components/Hero/Hero'
 import Servicios from './components/Servicios/servicios'
@@ -16,6 +17,7 @@ function App() {
       < AnnSystems />
       < Trabajos />
       < Hablemos />
+      < Footer />
     </>
   )
 }

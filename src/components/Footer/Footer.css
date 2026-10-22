@@ -1,0 +1,34 @@
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0 0;
+    background-color: rgba(227, 227, 227, 0.472);
+    color: blue;
+    min-height: 100vh;
+    gap: 75px;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+}
+
+.img-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.img-footer {
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.span-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 20px 0;
+    height: 10%;
+}

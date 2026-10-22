@@ -1,0 +1,127 @@
+.hablemos-section {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    background-color: white;
+    color: blue;
+    min-height: 100vh;
+    gap: 75px;
+    color: rgb(0, 0, 0);
+}
+
+.hablemos-title {
+    font-size: 120px;
+    margin-bottom: -30px;
+    display: flex;
+    color: blue;
+}
+
+.hablemos-subtitles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subtitle1 {
+    max-width: 200px;
+    font-size: 32px;
+    color: #cfcfcf;
+}
+
+.subtitle2 {
+    max-width: 300px;
+    font-size: 24px;
+    color: #cfcfcf;
+}
+
+.hablemos-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hablemos-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.hablemos-form-title {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: blue;
+}
+
+.hablemos-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80%;
+}
+
+.hablemos-form-input {
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    padding: 10px 0;
+    background: transparent;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+        color: #777;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+
+    &:focus {
+        border-bottom: 2px solid blue;
+    }
+}
+
+.hablemos-form-button {
+    background-color: blue;
+    border: 1px solid blue;
+    width: 20%;
+    padding: 10px 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.hablemos-redes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.hablemos-redes-title {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: blue;
+    max-width: 25%;
+}
+
+.hablemos-whatsapp-button {
+    background-color: blue;
+    border: 1px solid blue;
+    padding: 10px 5px;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    display: flex;
+}
+
+.hablemos-redes-button {
+    display: flex;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid blue;
+    width: auto;
+    padding: 10px 5px;
+    color: blue;
+    cursor: pointer;
+}
