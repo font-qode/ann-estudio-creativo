@@ -4,7 +4,7 @@ import Estudio from './components/Estudio/Estudio'
 import Footer from './components/Footer/Footer'
 import Hablemos from './components/Hablemos/Hablemos'
 import Hero from './components/Hero/Hero'
-import Servicios from './components/Servicios/servicios'
+import Servicios from './components/Servicios/Servicios'
 import Trabajos from './components/Trabajos/Trabajos'
 
 function App() {

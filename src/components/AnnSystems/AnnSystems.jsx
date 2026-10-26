@@ -2,7 +2,7 @@ import "./AnnSystems.css";
 
 function AnnSystems() {
   return (
-    <section className="systems-sectios">
+    <section id="systems" className="systems-sections">
       <div className="systems-title-container">
         <h2 className="systems-title"> Ann Systems </h2>
       </div>
@@ -30,7 +30,7 @@ function AnnSystems() {
             </p>
           </div>
           <div className="systems-mock-container">
-            <span> [ Imagen / mock up del Workbook ] </span>
+            <img className="img-mock" src="/mockAnnSystems.png" alt="Imagen Mock Up" />
           </div>
         </div>
         <div className="systems-mail-container">

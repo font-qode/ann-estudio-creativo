@@ -3,7 +3,7 @@ import './Hablemos.css';
 function Hablemos() {
 
     return (
-        <section className='hablemos-section'>
+        <section id='contacto' className='hablemos-section'>
             <div className='hablemos-title-container'>
                 <h2 className='hablemos-title'> Hablemos </h2>
             </div>

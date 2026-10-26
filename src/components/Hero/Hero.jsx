@@ -4,7 +4,7 @@ import './Hero.css';
 function Hero() {
 
     return (
-        <section className='hero-section'>
+        <section id='inicio' className='hero-section'>
             < Header />
             <div className="hero-info-container">
                 <div className='hero-logo-container'>

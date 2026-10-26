@@ -3,7 +3,7 @@ import './Estudio.css';
 function Estudio() {
 
     return (
-        <section className='studio-section'>
+        <section id='estudio' className='studio-section'>
             <div className='studio-title-container'>
                     <h2 className='studio-title-first-part'> El </h2>
                     <h2 className='studio-title-second-part'> Estudio </h2>
@@ -20,8 +20,8 @@ function Estudio() {
                 </div>
             </div>
             <div className='studio-line-container'>
-                    <span className='studio-line'>____________________________________________________</span>
-                    <span className='studio-line'>________________________________</span>
+                    <div className='studio-line'></div>
+                    <div className='studio-line1'></div>
             </div>
         </section>
     )

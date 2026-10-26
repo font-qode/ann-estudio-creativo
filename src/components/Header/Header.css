@@ -5,12 +5,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    background-color: rgba(0, 0, 255, 0);
     position: absolute;
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.4s ease,
+                color 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.menu-button {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: rgb(107, 107, 107);
+  transition: 0.5s;
 }
 
 .navbar-logo-container {
@@ -27,13 +48,22 @@
     align-items: center;
     height: 35px;
     width: 35px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .navbar-sections-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 75px;
+}
+
+.li {
+  display: flex;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
 }
 
 .navbar-sections {
@@ -41,4 +71,51 @@
     text-align: center;
     font-size: 14px;
     color: rgb(107, 107, 107);
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+@media (max-width: 860px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+
+  .menu-button {
+    display: block;
+    position: relative;
+    z-index: 1200;
+  }
+
+  .navbar-sections-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 250px;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.4s ease, visibility 0s 0.4s;
+    z-index: 1100;
+  }
+
+  .navbar-sections-container.open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.4s ease;
+  }
 }

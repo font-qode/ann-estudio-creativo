@@ -1,11 +1,11 @@
-.systems-sectios {
+.systems-sections {
     display: flex;
     flex-direction: column;
     padding: 100px 50px;
     background-color: white;
     color: blue;
     min-height: 100vh;
-    gap: 75px;
+    gap: 50px;
     color: rgb(0, 0, 0);
 }
 
@@ -29,10 +29,10 @@
 }
 
 .systems-paragraph-subcontainer {
-    gap: 30px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    width: 50%;
     color: blue;
     font-size: 24px;
     font-weight: 800;
@@ -61,14 +61,15 @@
 }
 
 .systems-mock-container {
-    width: 300px;
+    width: auto;
     height: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    margin-right: 10%;
-    color: #777;
+}
+
+.img-mock {
+    display: flex;
+    width: auto;
+    height: 300px;
 }
 
 .systems-mail-title {
@@ -86,8 +87,6 @@
 .systems-mail-subtitle {
     color: #777;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
     letter-spacing: 1px;
     opacity: 1;
 }
@@ -105,8 +104,6 @@
     &::placeholder {
         color: #777;
         font-size: 14px;
-        font-family: "Inter", sans-serif;
-        font-weight: 300;
         letter-spacing: 1px;
         opacity: 1;
     }
@@ -120,4 +117,11 @@
     border: none;
     background-color: white;
     color: blue;
+}
+
+@media (max-width: 768px) {
+    .systems-paragraph-container {
+    display: flex;
+    flex-direction: column;
+}
 }
