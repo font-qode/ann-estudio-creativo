@@ -47,8 +47,38 @@
     opacity: 1;
 }
 
+.systems-volume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.systems-volume {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: blue;
+}
+
 .systems-volume-title {
-    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(30px, 3vw, 46px);
+    font-weight: 400;
+    line-height: 1.1;
+    color: blue;
+}
+
+.systems-volume-title .systems-script {
+    font-family: "Italianno", cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
 }
 
 .systems-mail-container {
@@ -72,8 +102,10 @@
 }
 
 .systems-mail-title {
-    letter-spacing: 8px;
-    font-size: 40px;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 400;
+    letter-spacing: 5px;
     color: blue;
 }
 

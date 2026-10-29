@@ -14,6 +14,23 @@
     color: blue;
 }
 
+.servicio-title {
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.servicio-script {
+    font-family: "Italianno", cursive;
+    font-size: 1.65em;
+    font-weight: 400;
+    color: blue;
+    letter-spacing: 0;
+    line-height: 0.8;
+    margin-left: 8px;
+}
+
 .servicios-container {
     display: flex;
     flex-direction: column;
@@ -34,7 +51,7 @@
 .servicio-info-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 28px;
     justify-content: center;
     align-items: end;
     border-bottom: 1px solid blue;
@@ -46,15 +63,11 @@
 .servicio-left-info-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 28px;
     justify-content: center;
     border-bottom: 1px solid blue;
     max-width: 50%;
     padding-bottom: 10px;
-}
-
-.servicio-title {
-    font-size: 36px;
 }
 
 .enlace-servicios {

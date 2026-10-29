@@ -19,17 +19,18 @@
 .hablemos-subtitles-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .subtitle1 {
-    max-width: 250px;
-    font-size: 32px;
+    max-width: 50%;
+    padding-right: 80px;
+    font-size: 28px;
     color: #b6b6b6;
 }
 
 .subtitle2 {
-    max-width: 500px;
+    max-width: 50%;
+    padding-right: 20px;
     font-size: 24px;
     color: #b6b6b6;
 }
@@ -86,9 +87,10 @@
     background-color: blue;
     border: 1px solid blue;
     width: 20%;
-    padding: 10px 5px;
+    padding: 5px;
     color: white;
     cursor: pointer;
+    max-width: 100px;
 }
 
 .hablemos-redes-container {
@@ -98,17 +100,10 @@
     width: 50%;
 }
 
-.hablemos-redes-title {
-    font-size: 60px;
-    letter-spacing: 5px;
-    color: blue;
-    max-width: 25%;
-}
-
 .hablemos-whatsapp-button {
     background-color: blue;
     border: 1px solid blue;
-    padding: 10px 5px;
+    padding: 10px;
     color: white;
     cursor: pointer;
     width: auto;
@@ -121,12 +116,41 @@
     border: none;
     border-bottom: 1px solid blue;
     width: auto;
-    padding: 10px 5px;
+    padding: 10px;
     color: blue;
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.hablemos-redes-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 15px;
+    row-gap: 0;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    color: blue;
+}
+
+.hablemos-redes-title .titulo-linea {
+    font-family: "Bodoni Moda", serif;
+    font-size: 1em;
+    line-height: 1;
+    letter-spacing: -2px;
+    white-space: nowrap;
+}
+
+.hablemos-redes-title .font-script {
+    font-family: "Italianno", cursive;
+    font-size: 1.25em;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0;
+    flex-basis: 100%;
+}
+
+@media (max-width: 960px) {
 
     .hablemos-section {
     display: flex;
@@ -192,6 +216,7 @@
     background: transparent;
     font-size: 14px;
     transition: border-color 0.3s ease;
+    width: 75%;
 
     &::placeholder {
         color: #777;
@@ -210,10 +235,11 @@
 .hablemos-form-button {
     background-color: blue;
     border: 1px solid blue;
-    padding: 10px 5px;
+    padding: 5px;
     color: white;
     cursor: pointer;
     font-size: 12px;
+    min-width: 100px;
 }
 
 .hablemos-redes-container {
@@ -225,14 +251,53 @@
 
 .hablemos-redes-title {
     font-size: 40px;
-    letter-spacing: 5px;
-    color: blue;
+    column-gap: 10px;
 }
 
 .hablemos-whatsapp-button {
     background-color: blue;
     border: 1px solid blue;
-    padding: 10px 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+}
+
+.hablemos-redes-button {
+    display: flex;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid blue;
+    width: 50%;
+    padding: 5px;
+    color: blue;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 480px) {
+    .hablemos-title {
+    font-size: 60px;
+}
+
+.hablemos-form-title {
+    font-size: 32px;
+}
+
+.hablemos-redes-title {
+    font-size: 32px;
+    column-gap: 8px;
+}
+
+.hablemos-form-input {
+    width: 100%;
+}
+
+.hablemos-whatsapp-button {
+    background-color: blue;
+    border: 1px solid blue;
+    padding: 5px;
     color: white;
     cursor: pointer;
     width: 100%;
@@ -244,23 +309,9 @@
     background-color: white;
     border: none;
     border-bottom: 1px solid blue;
-    width: auto;
-    padding: 10px 5px;
+    width: 100%;
+    padding: 5px;
     color: blue;
     cursor: pointer;
-}
-}
-
-@media (max-width: 768px) {
-    .hablemos-title {
-    font-size: 60px;
-}
-
-.hablemos-form-title {
-    font-size: 25px;
-}
-
-.hablemos-redes-title {
-    font-size: 25px;
 }
 }

@@ -11,14 +11,43 @@
     gap: 50px;
 }
 
+.studio-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.studio-script {
+    font-family: "Italianno", cursive;
+    font-size: 2em;
+    font-weight: 400;
+    color: blue;
+    letter-spacing: 0;
+    line-height: 0.8;
+    margin: 0 7px;
+}
+
+.studio-script-secondary {
+    font-family: "Italianno", cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: blue;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
 .studio-title-first-part {
     font-size: 75px;
-    display: flex;
+    line-height: 0.85;
+    margin: 0;
 }
 
 .studio-title-second-part {
     font-size: 120px;
-    display: flex;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    margin: 0;
 }
 
 .studio-info-container {
@@ -111,6 +140,13 @@
 
 .studio-info-container {
     gap: 25px;
+}
+
+.studio-info-container p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
 }
 
 .studio-subtitle {

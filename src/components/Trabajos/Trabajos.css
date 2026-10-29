@@ -1,310 +1,352 @@
+
 .trabajos-section {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 50px;
-    background-color: rgba(227, 227, 227, 0.472);
-    color: blue;
-    min-height: 100vh;
-    gap: 75px;
-    color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 50px;
+  background-color: #f3f3f3;
+  color: black;
+  gap: 75px;
 }
+
+/* TITULO */
 
 .trabajos-title {
-    font-size: 120px;
-    margin-bottom: -30px;
-    display: flex;
-    color: blue;
+  font-size: clamp(65px, 9vw, 120px);
+  font-weight: 400;
+  line-height: 1;
+  color: blue;
 }
 
+/* SUBTITULOS */
+
 .trabajos-subtitles-container {
-    display: flex;
-    flex-direction: column;
-    margin: 25px 0;
-    border-bottom: 1px solid blue;
-    padding-bottom: 50px;
-    gap: 50px;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 35px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid blue;
 }
 
 .subtitle1-container {
-    font-size: 32px;
+  display: flex;
+  width: 100%;
+  font-size: 32px;
+  color: #999;
+}
+
+.subtitle1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(30px, 3vw, 46px);
+    font-weight: 400;
+    line-height: 1.1;
+    width: 100%;
+    padding: 0;
+}
+
+.subtitle1 .systems-script {
+    font-family: "Italianno", cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    color: blue;
 }
 
 .subtitle2-container {
-    margin-right: 10%;
-    font-size: 20px;
+  display: flex;
+  width: 100%;
+  color: #999;
 }
+
+.subtitle2 {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Bodoni Moda", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    width: 100%;
+    padding: 0;
+}
+
+.subtitle2-container {
+  font-size: 20px;
+  color: #999;
+  line-height: 1.5;
+}
+
+/* PROYECTOS */
 
 .trabajos-info-carrousel-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 0;
 }
+
+/* GALERIA EDITORIAL */
 
 .trabajos-carrousel-container {
-    height: 300px;
-    background-color: rgba(227, 227, 227, 0.472);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: grey;
-    font-size: 24px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: 190px 190px;
+  gap: 8px;
+  width: 100%;
 }
 
+.trabajos-carrousel {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background-color: #e6e6e6;
+}
+
+/* Imagen principal */
+
+.trabajos-carrousel:nth-child(1) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+/* Imagen vertical */
+
+.trabajos-carrousel:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Imágenes pequeñas */
+
+.trabajos-carrousel:nth-child(3),
+.trabajos-carrousel:nth-child(4) {
+  grid-column: span 1;
+}
+
+.trabajos-carrousel:nth-child(5) {
+  display: none;
+}
+
+.trabajos-carrousel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.trabajos-carrousel:hover img {
+  transform: scale(1.04);
+}
+
+/* INFORMACION */
+
 .trabajos-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 15px 20px;
 }
 
 .trabajos-info-subcontainer {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  min-width: 0;
 }
 
 .trabajo-title {
-    font-size: 32px;
-    color: blue;
+  font-size: 36px;
+  font-weight: 400;
+  color: blue;
 }
 
 .trabajo-description {
-    color: grey;
+  font-size: 16px;
+  color: #777;
 }
 
 .trabajos-number {
-    font-size: 80px;
-    color: blue;
+  font-family: var(--font-body);
+  font-size: 85px;
+  font-weight: 300;
+  line-height: 1;
+  color: blue;
 }
+
+/* ENLACE EDITORIAL */
 
 .trabajo-button {
-    color: white;
-    border: none;
-    background-color: blue;
-    padding: 5px;
-    text-align: center;
-    width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid blue;
+  color: blue;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  transition: gap 0.3s ease;
+  cursor: pointer;
 }
 
+.trabajo-button span {
+  font-size: 15px;
+}
+
+.trabajo-button:hover {
+  gap: 15px;
+}
+
+/* ALTERNANCIA */
+
+.trabajos-invertido {
+  flex-direction: row-reverse;
+}
+
+.trabajos-invertido .trabajos-info-subcontainer {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* TABLET */
 
 @media (max-width: 768px) {
+  .trabajos-section {
+    padding: 100px 25px;
+    gap: 55px;
+  }
 
-    .trabajos-section {
-        padding: 100px 25px;
-        gap: 55px;
-        min-height: auto;
-    }
+  .trabajos-title {
+    font-size: clamp(65px, 10vw, 90px);
+  }
 
-    .trabajos-title {
-        font-size: clamp(65px, 10vw, 90px);
-        line-height: 1;
-        margin-bottom: 0;
-    }
+  .trabajos-subtitles-container {
+    width: 75%;
+    gap: 30px;
+    padding-bottom: 35px;
+  }
 
-    /* Subtítulos */
+  .subtitle1-container {
+    font-size: 28px;
+  }
 
-    .trabajos-subtitles-container {
-        width: 75%;
-        margin: 0;
-        padding-bottom: 35px;
-        gap: 30px;
-    }
+  .subtitle2-container {
+    font-size: 18px;
+  }
 
-    .subtitle1-container {
-        font-size: 28px;
-        line-height: 1.2;
-    }
+  /* Carrusel horizontal */
 
-    .subtitle2-container {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-right: 0;
-    }
+  .trabajos-carrousel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 300px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
 
-    /* Proyectos */
+  .trabajos-carrousel-container::-webkit-scrollbar {
+    display: none;
+  }
 
-    .trabajos-info-carrousel-container {
-        gap: 20px;
-        min-width: 0;
-    }
+  .trabajos-carrousel,
+  .trabajos-carrousel:nth-child(1),
+  .trabajos-carrousel:nth-child(2),
+  .trabajos-carrousel:nth-child(3),
+  .trabajos-carrousel:nth-child(4),
+  .trabajos-carrousel:nth-child(5) {
+    display: block;
+    flex: 0 0 45%;
+    scroll-snap-align: start;
+  }
 
-    .trabajos-carrousel-container {
-        height: 260px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
+  .trabajos-info-container {
+    padding: 10px 0;
+  }
 
-        overflow-x: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: thin;
-    }
+  .trabajo-title {
+    font-size: 28px;
+  }
 
-    .trabajos-carrousel {
-        flex: 0 0 45%;
-        min-width: 0;
-        text-align: center;
-        scroll-snap-align: start;
-    }
-
-    /* Información del proyecto */
-
-    .trabajos-info-container {
-        padding: 10px 0;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .trabajos-info-subcontainer {
-        gap: 12px;
-        min-width: 0;
-    }
-
-    .trabajo-title {
-        font-size: 28px;
-    }
-
-    .trabajo-description {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .trabajos-number {
-        font-size: 65px;
-        line-height: 1;
-    }
-
-    .trabajo-button {
-        align-self: flex-start;
-        padding: 10px 16px;
-        font-size: 14px;
-        cursor: pointer;
-    }
+  .trabajos-number {
+    font-size: 65px;
+  }
 }
 
-
+/* MOBILE */
 
 @media (max-width: 480px) {
+  .trabajos-section {
+    padding: 100px 25px;
+    gap: 45px;
+  }
 
-    .trabajos-section {
-        padding: 100px 25px;
-        gap: 45px;
-    }
+  .trabajos-title {
+    font-size: clamp(50px, 13vw, 70px);
+  }
 
-    /* Título principal */
+  .trabajos-subtitles-container {
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
 
-    .trabajos-title {
-        font-size: clamp(50px, 13vw, 70px);
-        line-height: 1.05;
-        margin-bottom: 0;
-    }
+  .subtitle1-container {
+    font-size: 24px;
+  }
 
-    /* Introducción */
+  .subtitle2-container {
+    font-size: 16px;
+  }
 
-    .trabajos-subtitles-container {
-        width: 100%;
-        margin: 0;
-        padding-bottom: 30px;
-        gap: 20px;
-    }
+  .trabajos-carrousel-container {
+    height: 260px;
+    gap: 12px;
+  }
 
-    .subtitle1-container {
-        font-size: 25px;
-        line-height: 1.2;
-    }
+  .trabajos-carrousel,
+  .trabajos-carrousel:nth-child(1),
+  .trabajos-carrousel:nth-child(2),
+  .trabajos-carrousel:nth-child(3),
+  .trabajos-carrousel:nth-child(4),
+  .trabajos-carrousel:nth-child(5) {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
 
-    .subtitle2-container {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-right: 0;
-    }
+  .trabajos-info-container {
+    gap: 15px;
+    padding: 10px 0;
+  }
 
-    /* Cada proyecto */
+  .trabajo-title {
+    font-size: 26px;
+  }
 
-    .trabajos-info-carrousel-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        min-width: 0;
-    }
+  .trabajo-description {
+    font-size: 14px;
+  }
 
-    /* Carrusel horizontal */
+  .trabajos-number {
+    font-size: 50px;
+  }
 
-    .trabajos-carrousel-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+  .trabajo-button {
+    font-size: 14px;
+    gap: 20px;
+  }
 
-        width: 100%;
-        height: 230px;
-        gap: 15px;
-        padding: 15px;
-
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-
-    .trabajos-carrousel-container::-webkit-scrollbar {
-        display: none;
-    }
-
-    .trabajos-carrousel {
-        flex: 0 0 85%;
-        min-width: 0;
-        text-align: center;
-        scroll-snap-align: center;
-    }
-
-    /* Información y número */
-
-    .trabajos-info-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 10px 0;
-    }
-
-    .trabajos-info-subcontainer {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        min-width: 0;
-    }
-
-    .trabajo-title {
-        font-size: 26px;
-        line-height: 1.2;
-    }
-
-    .trabajo-description {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .trabajos-number-container {
-        flex-shrink: 0;
-    }
-
-    .trabajos-number {
-        font-size: 50px;
-        line-height: 1;
-        margin: 0;
-    }
-
-    /* Botón */
-
-    .trabajo-button {
-        align-self: flex-start;
-        padding: 10px 15px;
-        font-size: 14px;
-        cursor: pointer;
-    }
+  .trabajo-button:hover {
+    gap: 25px;
+  }
 }
