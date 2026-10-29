@@ -39,16 +39,15 @@
 }
 
 .systems-paragraph {
-    font-size: 20px;
-    color: #777;
     font-size: 16px;
+    color: #777;
     font-family: "Inter", sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
     opacity: 1;
 }
 
-.systems-paragraph- {
+.systems-volume-title {
     font-size: 32px;
 }
 
@@ -119,9 +118,203 @@
     color: blue;
 }
 
+
 @media (max-width: 768px) {
+
+    .systems-sections {
+        padding: 100px 25px;
+        gap: 45px;
+        min-height: auto;
+    }
+
+    .systems-title {
+        font-size: clamp(65px, 10vw, 90px);
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    .systems-info-container {
+        gap: 60px;
+    }
+
+    /* Información y mockup */
+
     .systems-paragraph-container {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .systems-paragraph-subcontainer {
+        width: 100%;
+        gap: 25px;
+        font-size: 22px;
+    }
+
+    .systems-paragraph {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    .systems-volume-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .systems-mock-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-mock {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Lista de espera */
+
+    .systems-mail-container {
+        padding: 40px 0;
+        gap: 25px;
+    }
+
+    .systems-mail-title {
+        font-size: 34px;
+        letter-spacing: 6px;
+    }
+
+    .systems-mail-subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .systems-mail-input-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .systems-input {
+        width: 65%;
+        min-width: 0;
+    }
+
+    .systems-mail-button {
+        cursor: pointer;
+        font-size: 15px;
+        white-space: nowrap;
+    }
 }
+
+
+
+@media (max-width: 480px) {
+
+    .systems-sections {
+        padding: 100px 25px;
+        gap: 35px;
+    }
+
+    /* Título principal */
+
+    .systems-title {
+        font-size: clamp(46px, 12vw, 65px);
+        line-height: 1.05;
+        margin-bottom: 0;
+    }
+
+    .systems-info-container {
+        gap: 45px;
+    }
+
+    /* Contenido */
+
+    .systems-paragraph-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .systems-paragraph-subcontainer {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .systems-paragraph {
+        font-size: 15px;
+        line-height: 1.6;
+        letter-spacing: 0.3px;
+    }
+
+    .systems-volume-title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    /* Mockup */
+
+    .systems-mock-container {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .img-mock {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Próximamente */
+
+    .systems-mail-container {
+        padding: 35px 0 0;
+        gap: 25px;
+    }
+
+    .systems-mail-title {
+        font-size: clamp(24px, 7vw, 32px);
+        letter-spacing: 4px;
+        line-height: 1.2;
+    }
+
+    .systems-mail-subtitle {
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+
+    /* Formulario */
+
+    .systems-mail-input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .systems-input {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .systems-input::placeholder {
+        font-size: 14px;
+    }
+
+    .systems-mail-button {
+        align-self: flex-start;
+        padding: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+    }
 }

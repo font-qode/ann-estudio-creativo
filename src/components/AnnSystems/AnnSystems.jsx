@@ -14,7 +14,7 @@ function AnnSystems() {
               Métodos y herramientas para ordenar la comunicación de tu
               marca.{" "}
             </p>
-            <div className="systems-paragraph-">
+            <div className="systems-volume-title">
               <div> Vol. 01 · </div>
               <div> De improvisar a planificar. </div>
             </div>

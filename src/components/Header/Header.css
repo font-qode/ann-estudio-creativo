@@ -30,7 +30,7 @@
   background: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: rgb(107, 107, 107);
+  color: black;
   transition: 0.5s;
 }
 
@@ -82,14 +82,36 @@
 
 @media (max-width: 860px) {
   .navbar {
-    padding: 20px 5%;
-  }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
 
-  .menu-button {
-    display: block;
-    position: relative;
-    z-index: 1200;
-  }
+    .navbar-logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-img-logo {
+        display: block;
+        width: 35px;
+        height: auto;
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        z-index: 1200;
+    }
 
   .navbar-sections-container {
     display: flex;

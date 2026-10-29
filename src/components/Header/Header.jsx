@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
+import { HiOutlineMenu } from "react-icons/hi";
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,7 @@ function Header() {
             </div>
 
             <button className="menu-button" onClick={() => setMenuHamburguesa(!menuHamburguesa)}>
-                ☰
+                <HiOutlineMenu size={20} />
             </button>
 
             <ul className={`navbar-sections-container ${menuHamburguesa ? 'open' : ''}`}>
