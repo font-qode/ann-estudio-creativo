@@ -33,7 +33,7 @@ function Servicios() {
                             <p className='servicio-description'> Combinamos estrategia digital, producción de moda y dirección creativa para que cada foto, cada campaña y cada publicación cuenten lo mismo: quien es tu marca.</p>
                         </div>
                         <div className='servicio-button-container'>
-                            <a href="" className='enlace-servicios'> Ver trabajos → </a>
+                            <a href="" className='enlace-servicios'> Ver servicio <span aria-hidden="true"> → </span> </a>
                         </div>
                     </div>
                     <div className='servicio-number-container'>
@@ -61,7 +61,7 @@ function Servicios() {
                             <p className='servicio-description'> Combinamos estrategia digital, producción de moda y dirección creativa para que cada foto, cada campaña y cada publicación cuenten lo mismo: quien es tu marca.</p>
                         </div>
                         <div className='servicio-button-container'>
-                            <a href="" className='enlace-servicios'> Ver trabajos → </a>
+                            <a href="" className='enlace-servicios'> Ver servicio <span aria-hidden="true"> → </span> </a>
                         </div>
                     </div>
                 </motion.div>
@@ -83,7 +83,7 @@ function Servicios() {
                             <p className='servicio-description'> Combinamos estrategia digital, producción de moda y dirección creativa para que cada foto, cada campaña y cada publicación cuenten lo mismo: quien es tu marca.</p>
                         </div>
                         <div className='servicio-button-container'>
-                            <a href="" className='enlace-servicios'> Ver trabajos → </a>
+                            <a href="" className='enlace-servicios'> Ver servicio <span aria-hidden="true"> → </span> </a>
                         </div>
                     </div>
                     <div className='servicio-number-container'>

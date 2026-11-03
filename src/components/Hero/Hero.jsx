@@ -27,8 +27,8 @@ function Hero() {
           }}
           className="hero-title-container"
         >
-          <h2 className="hero-title">Marcas con intención.</h2>
-          <h2 className="hero-title">Comunicación con dirección.</h2>
+          <h2 className="hero-title">Marcas con <span className="hero-title-span"> intención.</span></h2>
+          <h2 className="hero-title">Comunicación con <span className="hero-title-span"> dirección. </span></h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -52,10 +52,10 @@ function Hero() {
           }}
           className="hero-buttons-container"
         >
-          <a className="hero-button">
+          <a href="#contacto" className="hero-button">
             Contanos tu proyecto <span className="span-flecha-hero"> ➝ </span>
           </a>
-          <a className="hero-button">
+          <a href="#trabajos"className="hero-button">
             Ver trabajos <span className="span-flecha-hero"> ➝ </span>
           </a>
         </motion.div>

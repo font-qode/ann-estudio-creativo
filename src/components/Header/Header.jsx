@@ -25,11 +25,13 @@ function Header() {
     return (
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="navbar-logo-container">
-                <img
+                <a href="#inicio">
+                    <img
                     src="/logo.png"
                     className="nav-img-logo"
                     alt="Logo Ann Estudio Creativo"
                 />
+                </a>
             </div>
 
             <button className="menu-button" onClick={() => setMenuHamburguesa(!menuHamburguesa)}>

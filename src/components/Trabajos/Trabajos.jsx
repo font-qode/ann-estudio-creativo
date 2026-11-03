@@ -92,7 +92,7 @@ function Trabajos() {
   whileInView={{ opacity: 1, scale: 1 }}
   viewport={{ once: true, amount: 0.2 }}
   transition={{
-    duration: 1.5,
+    duration: 1.2,
     ease: "easeOut"
   }}
                 className="trabajos-carrousel"
